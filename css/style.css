@@ -134,7 +134,7 @@ header {
     height: 50px;
 }
 
-#filtres_titre {
+.h2_titre {
     font-weight: 700;
     font-size: 18px;
 }
@@ -217,13 +217,13 @@ header {
 }
 
 .hebergement_liste { 
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-content: center;
     margin-top: 23px;    
 }
 
-li[class^="hebergement_card"]{
+li[id^="hebergement_card"]{
     background-color: white;
     display: flex;
     position: relative;
@@ -234,7 +234,7 @@ li[class^="hebergement_card"]{
     margin: 0 31px 30px 0px;
 }
 
-li[class^="hebergement_card"]:hover {
+li[id^="hebergement_card"]:hover {
     box-shadow: 0 0 6px 0px #d9d9d9;
 }
 
@@ -351,7 +351,7 @@ li[class^="hebergement_card"]:hover {
     margin-top: 25px;    
 }
 
-li[class^="populaire_card"]{
+li[id^="populaire_card"]{
     background-color: white;
     display: flex;
     position: relative;
@@ -404,7 +404,7 @@ li[class^="populaire_card"]{
     font-size: 16px;
 }
 
-li[class^="populaire_card"]:hover {
+li[id^="populaire_card"]:hover {
     box-shadow: 0 0 6px 0px #d9d9d9;
 }
 
@@ -413,6 +413,7 @@ li[class^="populaire_card"]:hover {
 #Activités {
     display: flex;
     flex-direction: column;
+    background-color: bisque;
 }
 
 .activites_liste { 
@@ -422,7 +423,7 @@ li[class^="populaire_card"]:hover {
     padding: 0;
 }
 
-li[class^="activites_card"]{
+li[id^="activites_card"]{
     background-color: white;
     display: flex;
     position: relative;
@@ -454,6 +455,44 @@ li[class^="activites_card"]{
     line-height: 19px;
 }
 
-li[class^="activites_card"]:hover {
+li[id^="activites_card"]:hover {
     box-shadow: 0 0 6px 0px #d9d9d9;
+}
+
+#activites_card_longchamp {
+    display: none;
+}
+
+#activites_card_frioul {
+    display: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f2f2f2;
+    margin: 61px 0 0 55px;
+    height: 225px;
+    width: 1339px;
+    padding: 45px 0 0 70px;
+}
+
+#footer_liste {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  li[class^="footer_bloc"] {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+.bloc_liens {
+    text-decoration: none;
+    color: black;
 }
