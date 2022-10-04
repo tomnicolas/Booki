@@ -15,27 +15,27 @@
 <!-- header -->
     <header>
         <img id="nav_logo" src="Logo/Reservia.svg" alt="logo">
-        <nav></nav>
+        <nav>
             <ul id="nav_bouton">
                 <li>
-                    <a class="bouton", href="#Hébergements">Hébergements</a>
+                    <a class="bouton" href="#Hébergements">Hébergements</a>
                 </li>
                 <li>
-                    <a class="bouton", href="#Activités">Activités</a>
+                    <a class="bouton" href="#Activités">Activités</a>
                 </li>
             </ul>
         </nav>
     </header>
 <!--Main-->
     <main>
-        <section id="Trouvez">
+        <section>
             <div id="recherche">
                 <h1 class="titre_section">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p id="recherche_p1"> En plein centre-ville ou en pleine nature</p>
                 <form id="recherche_form" method="post" action="recherche.php">
                     <a id="form_i" href="#"><i class="fa-solid fa-location-dot fa-lg"></i></a>                    
-                    <input type="search" name="recherche" id="form_barre" placeholder="Marseille, France"/>
-                    <input id="form_bouton" type="submit" value="Rechercher" />              
+                    <input type="search" name="recherche" id="form_barre" placeholder="Marseille, France">
+                    <input id="form_bouton" type="submit" value="Rechercher" >              
                 </form>          
                 <div id="recherche_filtres">
                     <h2 class="h2_titre">Filtres</h2>
@@ -50,8 +50,9 @@
             </div>
             </div>           
         </section>
-        <section id="Hébergements">
-            <article id="hebergements_marseille">
+        <section>
+            <div id="Hébergements">
+                <article id="hebergements_marseille">
                 <h1 class="hebergements_titre">Hébergements à Marseille</h1>
                 <ul class="hebergement_liste">
                     <li id="hebergement_card_canebiere">                    
@@ -134,8 +135,8 @@
                     </li>
                 </ul>
                 <h2 id="hebergement_plus"><a href="#">Afficher plus</a></h2>
-            </article>
-            <aside id="populaires">                      
+                </article>
+                <aside id="populaires">                      
                 <div id="populaire_head">
                     <h1 class="hebergements_titre">Les plus populaires</h1>                
                 <div id="populaire_chart">
@@ -189,11 +190,13 @@
                         </div>
                     </li>
                 </ul>
-            </aside>
+                </aside>
+            </div>
         </section>
-        <section id="Activités">
-            <h1 class="titre_section" >Activités à Marseille</h1>
-            <ul class="activites_liste">
+        <section>
+            <div id="Activités">
+                <h1 class="titre_section" >Activités à Marseille</h1>
+                <ul class="activites_liste">
                 <li id="activites_card_vieux_port">
                     <a href="#" class="card_click"></a>
                     <img class="card_pic" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
@@ -225,6 +228,7 @@
                     <h4 class="card_b_titre">Parc Longchamp</h4>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 <!--Footer-->
