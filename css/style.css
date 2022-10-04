@@ -137,6 +137,7 @@ header {
 .h2_titre {
     font-weight: 700;
     font-size: 18px;
+    margin-bottom: 21px;
 }
 
 .filtres_bouton {
@@ -217,7 +218,7 @@ header {
 }
 
 .hebergement_liste { 
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
     margin-top: 23px;    
@@ -282,6 +283,7 @@ li[id^="hebergement_card"]:hover {
     align-items: center;
     font-size: 16px;
 }
+
 .stars i:last-child {
     color: #f2f2f2;
 }
@@ -397,12 +399,24 @@ li[id^="populaire_card"]{
     margin: 0 0 0 15px;
     font-weight: 400;
     font-size: 14px;
-    margin: 43px 0 0 15px;
+    margin: 0px 0 0 15px;
     height: 12px;
     display: flex;
     align-items: center;
     font-size: 16px;
 }
+
+.populaires_liste .stars {
+    background-color: white;
+    position: absolute;
+    color: #0065FC;
+    margin: 120px 0 11px 16px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
 
 li[id^="populaire_card"]:hover {
     box-shadow: 0 0 6px 0px #d9d9d9;
@@ -413,7 +427,6 @@ li[id^="populaire_card"]:hover {
 #Activités {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
 }
 
 .activites_liste { 
@@ -471,28 +484,30 @@ li[id^="activites_card"]:hover {
 
 footer {
     background-color: #f2f2f2;
-    margin: 61px 0 0 55px;
+    margin: 61px 0px 0 55px;
     height: 225px;
-    width: 1339px;
+    width: 1265px;
     padding: 45px 0 0 70px;
 }
 
 #footer_liste {
-    background-color: antiquewhite;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     padding: 0;
   }
 
   li[class^="footer_bloc"] {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 0;
+    margin: 0 230px 0 0;
     padding: 0 0 0 0;
   }
 
 .bloc_liens {
     text-decoration: none;
     color: black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 12px;
 }
