@@ -6,6 +6,7 @@
 
 body {
     max-width: 1400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding:0;
@@ -592,7 +593,7 @@ li[class^="footer_bloc"] {
 
 /* Medias queries */
 
-@media screen and (max-width: 1396px)
+/*@media screen and (max-width: 1396px)
 {
     #hebergement_marseille{
         margin-right: 30px;
@@ -621,7 +622,7 @@ li[class^="footer_bloc"] {
     /*.p_card_pic{
     }   */
 
-    .p_card_b_titre{
+/*    .p_card_b_titre{
         width: auto;
         overflow-wrap: break-word;
     }
@@ -634,15 +635,15 @@ li[class^="footer_bloc"] {
     .hebergement_liste {
         grid-template-columns: 30.3% 30.3% 30.3%;
         /*column-gap: 3%;*/
-        }
+/*        }
 
-    #Hébergements {
+/*    #Hébergements {
         grid-template-columns: auto;
         grid-template-rows: 626px 278px;
         /*flex-direction: column;
         width: max-content;
         overflow: auto;*/
-        margin: 0 30px 0 30px;
+/*        margin: 0 30px 0 30px;
         gap: 50px;
     }    
     #populaires {
