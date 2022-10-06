@@ -132,8 +132,8 @@ header {
 }
 
 #form_bouton:hover {
-
     box-shadow: 0px 0px 8px 0px #000000 inset;
+    transition: ease 0.3s;
 }
 
 #form_i{
@@ -246,7 +246,6 @@ header {
 }
 
 .hebergement_liste {
-    background-color: bisque;
     display: grid;
     justify-content: space-between;
     row-gap: 30px;
@@ -390,40 +389,60 @@ li[id^="hebergement_card"]:hover {
     margin-top: 44px;
 }
 
-.populaires_liste {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    row-gap: 33px;
-    margin-top: 25px;    
-    margin-right: 40px;
+.populaires_liste {    
+    grid-template-rows: 145px 145px 145px;
+    grid-template-columns: auto;
+    gap: 0;
+    /*flex-direction: column;*/
+    display: grid;
+    /*flex-direction: column;*/
+    align-content: space-between;
+    margin: 25px 40px 34px 40px;     
+    padding: 0;
+    font-size: 0;
+    height: 500px;
+    width: auto;
+    
+
 }
 
-li[id^="populaire_card"]{
+li[id^="populaire_card"]{ 
     background-color: white;
     display: flex;
     position: relative;
     flex-direction: row;    
-    overflow: auto;
+    /*overflow: auto;*/
+    max-width: 340px;
+    height: 145px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0 0 6px 2px #d9d9d9;
-    /*margin: 0px 40px 33px 0px;*/
+    margin: 0;
 }
 
 .p_card_pic {
     position: relative;
     object-fit: cover;
-    height: 134px;
-    width: 127px;
+    height: 135px;
+    width: 37%;
     margin: 0;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;        
 }
 
+.p_card_pic_b {
+    position: relative;
+    object-fit: cover;
+    height: 135px;
+    width: 40%;
+    margin: 0;
+    border: 5px solid white;
+    border-radius: 20px 0 0 20px;  
+}
+
 .p_card_banner {
     display: flex;
+    width: 200px;
     flex-direction: column;
     padding: 0px 5px 9px 15px;
 
@@ -433,7 +452,7 @@ li[id^="populaire_card"]{
 .p_card_b_titre{    
     color: black;    
     padding: 0;
-    width: 169px;
+    width: auto;
     height: auto;
     font-weight: 700;
     font-size: 16px;
@@ -445,6 +464,7 @@ li[id^="populaire_card"]{
     background-color: white;
     padding: 0;
     height: 15px;
+    width: auto;
     margin: 0 0 0 0px;
     font-weight: 400;
     font-size: 14px;    
@@ -462,6 +482,7 @@ li[id^="populaire_card"]{
     height: 12px;
     display: flex;
     align-items: center;
+    width: auto;
     font-size: 16px;
 }
 
@@ -577,7 +598,7 @@ li[class^="footer_bloc"] {
 
 /* Medias queries */
 
-@media all and (max-width: 1396px)
+@media screen and (max-width: 1396px)
 {
     #hebergement_marseille{
         margin-right: 30px;
@@ -585,14 +606,18 @@ li[class^="footer_bloc"] {
     }
 
     .populaires_liste {
-        flex-direction: row;
-        flex-wrap: wrap;
-        /*width: auto;
-        justify-content: space-between;*/
-        height: 148px;
-        padding: 0;
-        margin: 26px 40px 44px 40px;
+        grid-template-rows: 145px;
+        grid-template-columns: auto auto auto;
+        width: auto;
+        align-content: center;
+        column-gap: 23px;
+        justify-content: space-between;
     }
+
+    .p_card_b_p {
+        font-size: 13px;
+    }
+
     .hebergement_liste {
         grid-template-columns: 30.3% 30.3% 30.3%;
         /*column-gap: 3%;*/
@@ -608,80 +633,9 @@ li[class^="footer_bloc"] {
         gap: 50px;
     }    
     #populaires {
-        /*margin: 50px 0 0 0;*/
+        margin: 0 0 0 0;
         width: auto;
-        height: auto;
+        height: 280px;
     }
 }
 
-@media all and (max-width: 992px)
-{
-
-    #Hébergements {
-
-        flex-direction: column;
-        /*width: max-content;*/
-        /*overflow: auto;*/
-        margin: 0 30px 0 30px;
-    }    
-
-    #hebergements_marseille {
-        width: auto;
-        max-width: 932px;
-    }
-
-    .hebergement_liste {
-        margin-right: 30px;
-        gap: 3.3%;        
-        /*width: auto;*/
-        background-color: bisque;
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 30.8% 30.8% 30.8%;
-        grid-template-rows: 200px 200px;
-        margin: 23px 40px 0 40px;    
-        /*gap: 30px;*/
-        padding: 0;
-        height: 430px;
-        width: inherit;
-        }
-    }
-
-   
-    .populaires_liste {
-        flex-direction: row;
-        flex-wrap: wrap;
-        overflow: hidden;        
-        align-content: center;
-        width: auto;
-        justify-content: space-between;
-        height: 148px;
-        padding: 0;
-        margin: 26px 40px 44px 40px;
-    }
-
-    li[id^="populaire_card"]{
-        width: 252px;
-    }
-
-    .p_card_banner {
-        width: 146px;
-        padding: 0px 5px 9px 10px;
-        overflow: auto;
-    }
-
-    .p_card_b_titre {
-        width: auto;
-        margin: 12px 5px 9px 0px;
-
-    }
-
-    .p_card_b_p {
-        font-size: 13px;
-    }
-
-    .p_card_pic {
-        height: 134px;
-        width: 101px;
-
-}
