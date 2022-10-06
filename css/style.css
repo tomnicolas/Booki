@@ -460,17 +460,12 @@ li[id^="populaire_card"]{
 }
 
 .p_card_b_p {
-    background-color: white;
     padding: 0;
     height: auto;
-    width: 132px;
-    overflow: auto;
-    margin: 0 0 0 0;
+    width: auto;
+    margin: 0 15px 0 0;
     font-weight: 400;
-    font-size: 14px;    
-    height: auto;
-    display: flex;
-    align-items: center;
+    font-size: 14px;
 }
 
 .populaires_liste .stars {
@@ -623,8 +618,8 @@ li[class^="footer_bloc"] {
         width: auto;
     }
 
-    .p_card_pic{
-    }   
+    /*.p_card_pic{
+    }   */
 
     .p_card_b_titre{
         width: auto;
@@ -632,6 +627,8 @@ li[class^="footer_bloc"] {
     }
     .p_card_b_p {
         font-size: 13px;
+        width: auto;
+        overflow-wrap: break-word;
     }
 
     .hebergement_liste {
@@ -653,5 +650,11 @@ li[class^="footer_bloc"] {
         width: auto;
         height: 280px;
     }
-}
+    }
 
+    @media screen and (max-width: 992px)
+    {
+    #Hébergements{
+        margin: 0 30px 0 30px;
+    }
+}
