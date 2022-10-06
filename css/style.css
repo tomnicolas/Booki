@@ -442,36 +442,35 @@ li[id^="populaire_card"]{
 
 .p_card_banner {
     display: flex;
-    width: 200px;
+    width: 60%;
     flex-direction: column;
     padding: 0px 5px 9px 15px;
 
 
 }
 
-.p_card_b_titre{    
+.p_card_b_titre{
     color: black;    
     padding: 0;
     width: auto;
     height: auto;
     font-weight: 700;
     font-size: 16px;
-    margin: 16px 0 9px 0px;
-    line-height: 19px;
+    margin: 16px 25px 9px 0px;
 }
 
 .p_card_b_p {
     background-color: white;
     padding: 0;
-    height: 15px;
-    width: auto;
-    margin: 0 0 0 0px;
+    height: auto;
+    width: 132px;
+    overflow: auto;
+    margin: 0 0 0 0;
     font-weight: 400;
     font-size: 14px;    
-    height: 12px;
+    height: auto;
     display: flex;
     align-items: center;
-    font-size: 16px;
 }
 
 .populaires_liste .stars {
@@ -607,13 +606,30 @@ li[class^="footer_bloc"] {
 
     .populaires_liste {
         grid-template-rows: 145px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 30.8% 30.8% 30.8%;
         width: auto;
         align-content: center;
         column-gap: 23px;
         justify-content: space-between;
     }
 
+    li[id^="populaire_card"]{
+        max-width: none;
+        width: auto;
+    }
+
+    .p_card_banner{
+        min-width: 146px;
+        width: auto;
+    }
+
+    .p_card_pic{
+    }   
+
+    .p_card_b_titre{
+        width: auto;
+        overflow-wrap: break-word;
+    }
     .p_card_b_p {
         font-size: 13px;
     }
