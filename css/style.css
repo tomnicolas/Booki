@@ -216,11 +216,11 @@ header {
 /*Main_article*/
 
 #Hébergements {
-    display: grid;
-    grid-template-columns: auto 420px;
+    display: flex;
+    /*grid-template-columns: auto auto;*/
     width: auto;
-    /*flex-direction: row;
-    justify-content: center;*/
+    flex-direction: row;
+    justify-content: space space-between;
     margin: 0 30px 50px 30px;
     padding: 0 ;
     column-gap: 40px;
@@ -233,7 +233,7 @@ header {
     /*overflow: auto;*/    
     background-color: #f2f2f2;
     height: 626px;
-    width: auto;
+    width: 65.67%;
     margin: 0 0 0 0;
     border-radius: 20px;
     font-size: 0;
@@ -242,7 +242,7 @@ header {
 .hebergements_titre {
     font-weight: 700;
     font-size: 22px;
-    margin: 42px 0 0 40px;
+    margin: 42px 70px 0 40px;
     line-height: 26px;
 }
 
@@ -257,7 +257,7 @@ header {
     padding: 0;
     font-size: 0;
     height: 430px;
-    width: inherit;
+    width: auto;
 }
 
 li[id^="hebergement_card"]{
@@ -266,7 +266,7 @@ li[id^="hebergement_card"]{
     position: relative;
     flex-direction: column;    
     /*overflow: auto;*/
-    min-width: 246px;
+    /*min-width: 246px;*/
     width: auto;
     border-radius: 20px;
     box-shadow: 0 0 6px 2px #d9d9d9;
@@ -280,7 +280,8 @@ li[id^="hebergement_card"]:hover {
 .h_card_pic {
     position: relative;
     object-fit: cover;
-    height: 114px;
+    max-height: 114px;
+    height: inherit;
     width: auto;
     margin: 0;
     border: 5px solid white;
@@ -288,7 +289,10 @@ li[id^="hebergement_card"]:hover {
 }
 
 .h_card_banner {
-    height: 199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
     width: auto;
 }
 
@@ -296,7 +300,8 @@ li[id^="hebergement_card"]:hover {
 .h_card_b_titre {
     padding: 0;
     width: auto;
-    height: 15px;
+    height: auto;
+    overflow: hidden;
     font-weight: 700;
     font-size: 16px;
     margin: 4px 0 9px 16px;
@@ -363,7 +368,7 @@ li[id^="hebergement_card"]:hover {
     flex-direction: column;    
     background-color: #f2f2f2;
     height: 626px;
-    width: 420px;
+    width: auto;
     margin: 0 0 0 0;
     padding: 0;
     border-radius: 20px;
@@ -403,6 +408,7 @@ li[id^="hebergement_card"]:hover {
     font-size: 0;
     height: 500px;
     width: auto;
+    max-width: 420px;
     
 
 }
@@ -413,7 +419,7 @@ li[id^="populaire_card"]{
     position: relative;
     flex-direction: row;    
     /*overflow: auto;*/
-    max-width: 340px;
+    /*max-width: 340px;*/
     height: 145px;
     width: auto;
     border-radius: 20px;
@@ -435,7 +441,7 @@ li[id^="populaire_card"]{
     position: relative;
     object-fit: cover;
     height: 135px;
-    width: 40%;
+    width: 37%;
     margin: 0;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;  
@@ -443,7 +449,7 @@ li[id^="populaire_card"]{
 
 .p_card_banner {
     display: flex;
-    width: 60%;
+    width: auto;
     flex-direction: column;
     padding: 0px 5px 9px 15px;
 
