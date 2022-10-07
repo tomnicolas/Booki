@@ -148,10 +148,11 @@ header {
     display: flex;
     margin: 31px 30px 0 0;    
     align-items: center;
+    overflow: ;
     height: 50px;
     width: auto;
     column-gap: 3%;
-    width: 100%;
+    width: auto;
 }
 
 .h2_titre {
@@ -223,7 +224,7 @@ header {
     justify-content: space space-between;
     margin: 0 30px 50px 30px;
     padding: 0 ;
-    column-gap: 40px;
+    column-gap: 3%;
     font-size: 0;
 }
 
@@ -253,7 +254,7 @@ header {
     column-gap: 3.3%;
     grid-template-columns: 30.8% 30.8% 30.8%;
     grid-template-rows: 200px 200px;
-    margin: 23px 40px 0 40px;      
+    margin: 23px 4.5% 0 4.5%;      
     padding: 0;
     font-size: 0;
     height: 430px;
@@ -280,8 +281,7 @@ li[id^="hebergement_card"]:hover {
 .h_card_pic {
     position: relative;
     object-fit: cover;
-    max-height: 114px;
-    height: inherit;
+    height: 110px;
     width: auto;
     margin: 0;
     border: 5px solid white;
@@ -292,7 +292,7 @@ li[id^="hebergement_card"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
+    height: 45px;
     width: auto;
 }
 
@@ -301,11 +301,9 @@ li[id^="hebergement_card"]:hover {
     padding: 0;
     width: auto;
     height: auto;
-    overflow: hidden;
     font-weight: 700;
     font-size: 16px;
-    margin: 4px 0 9px 16px;
-    line-height: 19px;
+    margin: 0px 5px 2px 16px;
 
 }
 
@@ -323,8 +321,9 @@ li[id^="hebergement_card"]:hover {
 
 .hebergement_liste .stars {
     color: #0065FC;
+    position: absolute;
     width: auto;
-    margin: 9px 0 11px 16px;
+    margin: 179px 0 11px 16px;
     height: 12px;
     display: flex;
     align-items: center;
@@ -358,7 +357,7 @@ li[id^="hebergement_card"]:hover {
 }
 
 #hebergement_plus {
-    margin: 30px 0 0 44px;
+    margin: 40px 0 0 44px;
 }
 
 /*Main_aside*/
@@ -368,7 +367,8 @@ li[id^="hebergement_card"]:hover {
     flex-direction: column;    
     background-color: #f2f2f2;
     height: 626px;
-    width: auto;
+    /*max-width: 420px;*/
+    width: 31.34%;
     margin: 0 0 0 0;
     padding: 0;
     border-radius: 20px;
@@ -403,12 +403,12 @@ li[id^="hebergement_card"]:hover {
     display: grid;
     /*flex-direction: column;*/
     align-content: space-between;
-    margin: 25px 40px 34px 40px;     
+    margin: 25px 9% 34px 9%;     
     padding: 0;
     font-size: 0;
     height: 500px;
     width: auto;
-    max-width: 420px;
+    /*max-width: 420px;*/
     
 
 }
@@ -463,14 +463,14 @@ li[id^="populaire_card"]{
     height: auto;
     font-weight: 700;
     font-size: 16px;
-    margin: 16px 25px 9px 0px;
+    margin: 10px 10px 5px 0px;
 }
 
 .p_card_b_p {
     padding: 0;
     height: auto;
     width: auto;
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
     font-weight: 400;
     font-size: 14px;
 }
@@ -599,69 +599,36 @@ li[class^="footer_bloc"] {
 
 /* Medias queries */
 
-/*@media screen and (max-width: 1396px)
+@media screen and (max-width: 992px)
 {
-    #hebergement_marseille{
-        margin-right: 30px;
-        
+    #Hébergements{
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        row-gap: 50px;
+    }
+
+    #hebergements_marseille {
+        width: 100%;
+    }
+
+    #populaires {
+        height: 278px;
+        width: 100%;
     }
 
     .populaires_liste {
-        grid-template-rows: 145px;
-        grid-template-columns: 30.8% 30.8% 30.8%;
+        grid-template-rows: auto;
+        grid-template-columns: 31.2% 31.2% 31.2%;
         width: auto;
-        align-content: center;
-        column-gap: 23px;
         justify-content: space-between;
+        margin: 25px 4.5% 34px 4.5%;
     }
 
-    li[id^="populaire_card"]{
-        max-width: none;
-        width: auto;
+    .p_card_b_titre {
+        font-size: 14px;
     }
 
-    .p_card_banner{
-        min-width: 146px;
-        width: auto;
-    }
-
-    /*.p_card_pic{
-    }   */
-
-/*    .p_card_b_titre{
-        width: auto;
-        overflow-wrap: break-word;
-    }
     .p_card_b_p {
         font-size: 13px;
-        width: auto;
-        overflow-wrap: break-word;
-    }
-
-    .hebergement_liste {
-        grid-template-columns: 30.3% 30.3% 30.3%;
-        /*column-gap: 3%;*/
-/*        }
-
-/*    #Hébergements {
-        grid-template-columns: auto;
-        grid-template-rows: 626px 278px;
-        /*flex-direction: column;
-        width: max-content;
-        overflow: auto;*/
-/*        margin: 0 30px 0 30px;
-        gap: 50px;
-    }    
-    #populaires {
-        margin: 0 0 0 0;
-        width: auto;
-        height: 280px;
-    }
-    }
-
-    @media screen and (max-width: 992px)
-    {
-    #Hébergements{
-        margin: 0 30px 0 30px;
     }
 }
