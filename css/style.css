@@ -157,8 +157,6 @@ header {
     width: 100%;
     flex-wrap: wrap;
     row-gap: 17px;
-    /*grid-template-columns: auto auto auto 226px;
-    grid-template-rows: 48px;*/
     gap: 3%;
 }
 
@@ -166,6 +164,7 @@ header {
     font-weight: 700;
     font-size: 18px;
     margin: 30px 0 0 0;
+    width: auto;
 }
 
 .filtres_bouton {
@@ -181,8 +180,6 @@ header {
     font-weight: 700;
     font-size: 17px;
     padding: 14px 20px 14px 0px;
-    /*margin-left: 5%;*/    
-    /*white-space: nowrap;*/
     text-decoration: none;
     line-height: 18px;
 }
@@ -512,7 +509,7 @@ li[id^="populaire_card"]:hover {
 
 .activites_liste { 
     display: flex;
-    column-gap: 3.68%;
+    gap: 3.68%;
     width: 100%;
     height: 100%;
     max-height: 475px;
@@ -525,11 +522,11 @@ li[id^="activites_card"]{
     display: flex;
     position: relative;
     flex-direction: column;    
-    aspect-ratio: 1 / 1.28;
+    /*aspect-ratio: 1 / 1.28;*/
     height: auto;
     width: 22.24%;
     font-size: 0;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 0 0 6px 2px #d9d9d9;
     margin: 19px 0 0 0;
 }
@@ -572,19 +569,17 @@ li[id^="activites_card"]:hover {
 
 footer {
     background-color: #f2f2f2;
-    margin: 61px 30px 0 30px;
+    margin: 60px 30px 0 30px;
     height: 225px;
     width: auto;
-    padding: 45px 70px 0 70px;
+    padding: 20px 40px 0 40px;
 }
 
 #footer_liste {
     display: flex;
     flex-direction: row;    
-    justify-content: space-between;
+    justify-content: space-around;
     width: auto;
-    max-width: 920px;
-    column-gap: 40px;
     padding: 0;
   }
 
@@ -593,17 +588,18 @@ li[class^="footer_bloc"] {
     flex-direction: column;
     width: auto;
     flex-wrap: nowrap;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
 }
 
 .bloc_liens {
+    width: 200px;
     text-decoration: none;
     color: black;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 12px;
+    margin: 12px 0 0 0;
 }
 
 /* Medias queries */
@@ -663,8 +659,6 @@ li[class^="footer_bloc"] {
         width: 100%;
         align-items: center;
         justify-content: center;
-        /*grid-template-columns: 100% 100%;
-        grid-row: 68px;*/
         margin: 0;
         padding: 0;
     }
@@ -735,7 +729,7 @@ li[class^="footer_bloc"] {
     .hebergement_liste { 
         grid-template-columns: 100%;
         grid-template-rows: 200px 200px 200px 200px 200px 200px;
-        height: 1360px;
+        height: 1300px;
         row-gap: 12px;
         margin-top: 5px;
     }
@@ -743,4 +737,46 @@ li[class^="footer_bloc"] {
     #hebergement_plus {
         display: none;
     }
+
+
+    #Activités {
+        height: 950px;
+        margin: 0 4.5% 0 4.5%;
+    }
+
+    .activites_liste {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        height: 950px;
+        gap: 24px;
+    }
+
+    .activites_liste .card_pic {
+        height: 134px;
+        width: 100%;
+        max-width: none;
+    }
+
+    li[id^="activites_card"]{
+        width: 100%;
+        height: 190px;
+        margin: 0;
+    }
+
+    footer {
+        height: 501px;
+        width: auto;
+        padding: 5px 30px 0px 30px;
+        margin: 0;
+    }
+
+    #footer_liste {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 410px;
+        width: auto;
+
+    }
+    
 }
