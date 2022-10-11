@@ -458,7 +458,7 @@ article[id^="populaire_card"]:hover {
 #Activités {
     display: flex;
     flex-direction: column;    
-    margin: 0 30px 0 30px;
+    margin: 20px 30px 0 30px;
 }
 
 .activites_liste { 
@@ -541,10 +541,10 @@ li[class^="footer_bloc"] {
     color: black;
     font-weight: 400;
     font-size: 16px;
-    margin: 12px 0 0 0;
+    margin-top: 12px;
 }
 
-/* Medias queries */
+/* Medias queries - Tablette */
 
 @media screen and (max-width: 992px)
 {
@@ -580,6 +580,8 @@ li[class^="footer_bloc"] {
     }
 }
 
+/* Médias queries - Mobile*/
+
 @media screen and (max-width: 768px)
 {
     nav {
@@ -612,6 +614,7 @@ li[class^="footer_bloc"] {
         align-items: center;
         justify-content: center;
         padding: 0;
+        box-shadow: 0 -3px 0 #f2f2f2 inset;
     }
 
     .bouton:hover {
@@ -642,10 +645,7 @@ li[class^="footer_bloc"] {
     }
 
     #recherche_filtres_boutons {
-        margin: 0;
         display: grid;
-        align-items: center;
-        justify-content: center;
         grid-template-columns: 48.5% 48.5%;
         grid-template-rows: auto auto;
     }
@@ -657,7 +657,7 @@ li[class^="footer_bloc"] {
 
     #Hébergements{
         flex-direction: column-reverse;
-        margin: 0 0 0 0;
+        margin: 0;
         row-gap: 0;
     }
 
@@ -686,14 +686,13 @@ li[class^="footer_bloc"] {
         height: auto;
         border-radius: 0;
         background-color: white;
-        
     }
     
     #hebergement_liste { 
         grid-template-columns: 100%;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: auto;
         height: 1300px;
-        row-gap: 12px;
+        row-gap: 15px;
         margin-top: 5px;
     }
 
@@ -701,10 +700,9 @@ li[class^="footer_bloc"] {
         display: none;
     }
 
-
     #Activités {
         height: 950px;
-        margin: 30px 4.5% 0 4.5%;
+        margin: 0 4.5% 0 4.5%;
     }
 
     .activites_liste {
@@ -739,7 +737,6 @@ li[class^="footer_bloc"] {
         justify-content: space-between;
         height: 410px;
         width: auto;
-
     }
     
 }
