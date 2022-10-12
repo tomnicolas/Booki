@@ -40,7 +40,7 @@ nav {
     align-items: center;
     height: 115px;
     width: auto;
-    margin: 0 0 0 15px;
+    margin-left: 15px;
     padding: 0 25px 0 25px;
     font-weight: 500;
     font-size: 16px;
@@ -53,7 +53,7 @@ nav {
     color: #0065FC;
 }
 
-/* Main_Section_Recherche*/
+/* Main_Section_Recherche */
 
 #recherche {    
     display: flex;
@@ -80,7 +80,7 @@ nav {
     grid-template-columns: 50px 235px 132px;
     grid-template-rows: 50px;
     align-items: center;
-    margin: 25px 0 0 0;
+    margin-top: 25px;
 }
 
 #form_i {
@@ -259,7 +259,7 @@ button[id^="form_bouton"]:hover {
     justify-content: space-between;
     row-gap: 30px;
     column-gap: 3.3%;
-    grid-template-columns: 30.8% 30.8% 30.8%;
+    grid-template-columns: repeat(3, 30.8%);
     grid-template-rows: 200px 200px;
     margin: 23px 4.5% 0 4.5%;      
     padding: 0;
@@ -388,7 +388,7 @@ article[id^="hebergement_card"]:hover {
 }
 
 .populaires_liste {    
-    grid-template-rows: 145px 145px 145px;
+    grid-template-rows: repeat(3, 145px);
     grid-template-columns: auto;
     display: grid;
     align-content: space-between;
@@ -458,7 +458,7 @@ article[id^="populaire_card"]:hover {
 #Activités {
     display: flex;
     flex-direction: column;    
-    margin: 20px 30px 0 30px;
+    margin: 30px 30px 0 30px;
 }
 
 .activites_liste { 
@@ -565,7 +565,7 @@ li[class^="footer_bloc"] {
 
     .populaires_liste {
         grid-template-rows: auto;
-        grid-template-columns: 31.2% 31.2% 31.2%;
+        grid-template-columns: repeat(3, 31.2%);
         width: auto;
         justify-content: space-between;
         margin: 25px 4.5% 34px 4.5%;
@@ -675,7 +675,7 @@ li[class^="footer_bloc"] {
     }
 
     .populaires_liste {
-        grid-template-rows: 31.2% 31.2% 31.2%;
+        grid-template-rows: repeat(3, 31.2%);
         grid-template-columns: 100%;
         width: auto;
         justify-content: space-between;
@@ -702,7 +702,7 @@ li[class^="footer_bloc"] {
 
     #Activités {
         height: 950px;
-        margin: 0 4.5% 0 4.5%;
+        margin: 30px 4.5% 0 4.5%;
     }
 
     .activites_liste {
