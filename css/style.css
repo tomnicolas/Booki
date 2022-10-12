@@ -418,7 +418,7 @@ article[id^="populaire_card"]{
 
 .p_card_banner {
     display: flex;
-    width: auto;
+    width: 206px;
     flex-direction: column;
     padding: 0px 5px 9px 10px;
 }
@@ -653,6 +653,11 @@ li[class^="footer_bloc"] {
     .filtres_bouton {
         width: auto;
         font-size: small;
+    }
+
+    .filtres_bouton:hover {
+        box-shadow: 0 4px 3px darkgray;
+        background-color: white;
     }
 
     #Hébergements{
